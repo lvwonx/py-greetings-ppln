@@ -20,7 +20,7 @@ runs:
         path: python-greetings
 
     - name: Deploy
-      shell: bash
+      shell: cmd
       working-directory: python-greetings
       run: |
         echo "Deploying to ${{ inputs.env }}..."
@@ -29,5 +29,5 @@ runs:
 
         pm2 start app.py \
           --name greetings-app-${{ inputs.env }} \
-          --interpreter ./venv/bin/python \
+          --interpreter venv\Scripts\python.exe \
           -- --port=${{ inputs.port }}

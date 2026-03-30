@@ -18,14 +18,14 @@ runs:
         path: tests
 
     - name: Install npm deps
-      shell: bash
+      shell: cmd
       working-directory: tests
       run: |
         echo "Installing npm dependencies..."
         npm install
 
     - name: Run tests
-      shell: bash
+      shell: cmd
       working-directory: tests
       run: |
         echo "Running tests on ${{ inputs.env }}..."
