@@ -1,0 +1,1546 @@
+[2026-03-30 18:02:20Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known config file 'Credentials': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\.credentials'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known config file 'Runner': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\.runner'
+[2026-03-30 18:02:20Z INFO Worker] Version: 2.333.0
+[2026-03-30 18:02:20Z INFO Worker] Commit: 8d231aaf863e5fcdd02d35bdfda369feafd08adb
+[2026-03-30 18:02:20Z INFO Worker] Culture: ru-RU
+[2026-03-30 18:02:20Z INFO Worker] UI Culture: ru-RU
+[2026-03-30 18:02:20Z INFO Worker] Waiting to receive the job message from the channel.
+[2026-03-30 18:02:20Z INFO ProcessChannel] Receiving message of length 20635, with hash '95a6e35a2fa4164c61f106eb917a98be7c718ce1faaf0808a0f52b0550160eee'
+[2026-03-30 18:02:20Z INFO Worker] Message received.
+[2026-03-30 18:02:20Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/python-greetings.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "repositoryType": "self",
+        "path": "./.github/actions/install-deps"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 11,
+        "col": 15,
+        "lit": "Checkout pipeline repo"
+      },
+      "contextName": "__self",
+      "condition": "success()",
+      "id": "c0101cb5-c02a-44ed-b603-905a14c408db",
+      "name": "__self"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "repositoryType": "self",
+        "path": "./.github/actions/install-deps"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 14,
+        "col": 15,
+        "lit": "Clone python-greetings"
+      },
+      "contextName": "__self_2",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 17,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 17,
+              "col": 11,
+              "lit": "repository"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 17,
+              "col": 23,
+              "lit": "mtararujs/python-greetings"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 18,
+              "col": 11,
+              "lit": "path"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 18,
+              "col": 17,
+              "lit": "python-greetings"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "3bf0c6ec-560d-407a-9d85-f867d8e9c144",
+      "name": "__self_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 20,
+        "col": 15,
+        "lit": "Install dependencies"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 22,
+              "col": 14,
+              "lit": "echo \"Installing dependencies...\"\npython3 -m venv venv\n./venv/bin/python -m pip install -r requirements.txt\n"
+            }
+          },
+          {
+            "key": "workingDirectory",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 21,
+              "col": 28,
+              "lit": "python-greetings"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "880c2ef4-f469-4693-a09d-7b72396f15ef",
+      "name": "__run"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "actions.runner.requirenode24": {
+      "value": "false"
+    },
+    "actions.runner.usenode24bydefault": {
+      "value": "false"
+    },
+    "actions.runner.warnonnode20": {
+      "value": "true"
+    },
+    "actions_add_check_run_id_to_job_context": {
+      "value": "true"
+    },
+    "actions_container_action_runner_temp": {
+      "value": "true"
+    },
+    "actions_display_helpful_actions_download_errors": {
+      "value": "true"
+    },
+    "actions_runner_compare_workflow_parser": {
+      "value": "false"
+    },
+    "actions_runner_deprecate_linux_arm32": {
+      "value": "false"
+    },
+    "actions_runner_emit_composite_markers": {
+      "value": "false"
+    },
+    "actions_runner_kill_linux_arm32": {
+      "value": "false"
+    },
+    "actions_runner_node20_removal_date": {
+      "value": ""
+    },
+    "actions_runner_node24_default_date": {
+      "value": ""
+    },
+    "actions_service_container_command": {
+      "value": "false"
+    },
+    "actions_set_orchestration_id_env_for_actions": {
+      "value": "true"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_snapshot_preflight_hosted_runner_check": {
+      "value": "false"
+    },
+    "actions_snapshot_preflight_image_gen_pool_check": {
+      "value": "false"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "install-pip-deps"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.orchestrationId": {
+      "value": "a8be9e8b-e9df-4039-8424-b7d52a2b623c.install-pip-deps.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "install-pip-deps"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "a8be9e8b-e9df-4039-8424-b7d52a2b623c",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "a8be9e8b-e9df-4039-8424-b7d52a2b623c",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "f2997197-64aa-55ad-a53d-36b19365d14c",
+  "jobDisplayName": "install-pip-deps",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/ziEmYLr55G9t8cbQgn5f7rrvCJHN36l1jeWnDoASdm99ZSG9Dt/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus10.actions.githubusercontent.com/ziEmYLr55G9t8cbQgn5f7rrvCJHN36l1jeWnDoASdm99ZSG9Dt/",
+          "GenerateIdTokenUrl": "",
+          "ConnectivityChecks": "[\"https://broker.actions.githubusercontent.com/health\",\"https://token.actions.githubusercontent.com/ready\",\"https://run.actions.githubusercontent.com/health\"]"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-3-azure-eastus.actions.githubusercontent.com/124/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "5a6fbc9e7f5c68a99e1449548e9c6d84299a1e0a"
+        },
+        {
+          "k": "repository",
+          "v": "lvwonx/py-greetings-ppln"
+        },
+        {
+          "k": "repository_owner",
+          "v": "lvwonx"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "147675846"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/lvwonx/py-greetings-ppln.git"
+        },
+        {
+          "k": "run_id",
+          "v": "23759762945"
+        },
+        {
+          "k": "run_number",
+          "v": "1"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "actor_id",
+          "v": "147675846"
+        },
+        {
+          "k": "actor",
+          "v": "lvwonx"
+        },
+        {
+          "k": "workflow",
+          "v": "Test Pipeline"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "5a6fbc9e7f5c68a99e1449548e9c6d84299a1e0a"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "40e57dc07f52a730894bf6d03ed84c64ce971b4a"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "lvcspwonx@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Marks Klescs"
+                              },
+                              {
+                                "k": "username",
+                                "v": "lvwonx"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "lvcspwonx@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Marks Klescs"
+                              },
+                              {
+                                "k": "username",
+                                "v": "lvwonx"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "5a6fbc9e7f5c68a99e1449548e9c6d84299a1e0a"
+                        },
+                        {
+                          "k": "message",
+                          "v": "fix workflow"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2026-03-30T21:02:08+03:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "05d0b58837072a71f0e6c4c054058e9084ef8761"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/lvwonx/py-greetings-ppln/commit/5a6fbc9e7f5c68a99e1449548e9c6d84299a1e0a"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/lvwonx/py-greetings-ppln/compare/40e57dc07f52...5a6fbc9e7f5c"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "lvcspwonx@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Marks Klescs"
+                          },
+                          {
+                            "k": "username",
+                            "v": "lvwonx"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "lvcspwonx@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Marks Klescs"
+                          },
+                          {
+                            "k": "username",
+                            "v": "lvwonx"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "5a6fbc9e7f5c68a99e1449548e9c6d84299a1e0a"
+                    },
+                    {
+                      "k": "message",
+                      "v": "fix workflow"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2026-03-30T21:02:08+03:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "05d0b58837072a71f0e6c4c054058e9084ef8761"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/lvwonx/py-greetings-ppln/commit/5a6fbc9e7f5c68a99e1449548e9c6d84299a1e0a"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "147675846+lvwonx@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "lvwonx"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/lvwonx/py-greetings-ppln.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1774892128.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "lvwonx/py-greetings-ppln"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/lvwonx/py-greetings-ppln.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pull_requests",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/lvwonx/py-greetings-ppln"
+                    },
+                    {
+                      "k": "id",
+                      "v": 1196431154.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "JavaScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "py-greetings-ppln"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOR1AXMg"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/147675846?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "147675846+lvwonx@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/lvwonx/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/lvwonx/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/lvwonx/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/lvwonx/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/lvwonx"
+                          },
+                          {
+                            "k": "id",
+                            "v": 147675846.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "lvwonx"
+                          },
+                          {
+                            "k": "name",
+                            "v": "lvwonx"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDOCM1axg"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/lvwonx/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/lvwonx/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/lvwonx/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/lvwonx/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/lvwonx/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/lvwonx"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pull_request_creation_policy",
+                      "v": "all"
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1774893625.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:lvwonx/py-greetings-ppln.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/lvwonx/py-greetings-ppln"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2026-03-30T18:00:09Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/lvwonx/py-greetings-ppln"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/147675846?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/lvwonx/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/lvwonx/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/lvwonx/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/lvwonx/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/lvwonx"
+                    },
+                    {
+                      "k": "id",
+                      "v": 147675846.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "lvwonx"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOCM1axg"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/lvwonx/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/lvwonx/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/lvwonx/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/lvwonx/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/lvwonx/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/lvwonx"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "lvwonx/py-greetings-ppln/.github/workflows/python-greetings.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "5a6fbc9e7f5c68a99e1449548e9c6d84299a1e0a"
+        },
+        {
+          "k": "repository_id",
+          "v": "1196431154"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "lvwonx"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "job": {
+      "t": 2,
+      "d": [
+        {
+          "k": "check_run_id",
+          "v": 69223857933.0
+        }
+      ]
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOCM1axg"
+}
+[2026-03-30 18:02:20Z INFO JobRunner] Job ID f2997197-64aa-55ad-a53d-36b19365d14c
+[2026-03-30 18:02:20Z INFO ConfigurationStore] currentAssemblyLocation: D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin\Runner.Worker.dll
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO ConfigurationStore] binPath: D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO ConfigurationStore] RootFolder: D:\vscprojects\NSTA\py-greetings-ppln\actions-runner
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known config file 'Runner': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\.runner'
+[2026-03-30 18:02:20Z INFO ConfigurationStore] ConfigFilePath: D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\.runner
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known config file 'MigratedRunner': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\.runner_migrated'
+[2026-03-30 18:02:20Z INFO ConfigurationStore] MigratedConfigFilePath: D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\.runner_migrated
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known config file 'Credentials': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\.credentials'
+[2026-03-30 18:02:20Z INFO ConfigurationStore] CredFilePath: D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\.credentials
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known config file 'MigratedCredentials': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\.credentials_migrated'
+[2026-03-30 18:02:20Z INFO ConfigurationStore] MigratedCredFilePath: D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\.credentials_migrated
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known config file 'Service': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\.service'
+[2026-03-30 18:02:20Z INFO ConfigurationStore] ServiceConfigFilePath: D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\.service
+[2026-03-30 18:02:20Z INFO ConfigurationStore] Read setting file: 393 chars
+[2026-03-30 18:02:20Z INFO JobRunner] Initializing launch client
+[2026-03-30 18:02:20Z INFO JobServerQueue] Initializing results client
+[2026-03-30 18:02:20Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2026-03-30 18:02:20Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2026-03-30 18:02:20Z INFO JobServerQueue] Start process web console line queue.
+[2026-03-30 18:02:20Z INFO JobServerQueue] Start process file upload queue.
+[2026-03-30 18:02:20Z INFO JobServerQueue] Start results file upload queue.
+[2026-03-30 18:02:20Z INFO JobServerQueue] Starting results-based upload queue...
+[2026-03-30 18:02:20Z INFO JobServerQueue] Start process timeline update queue.
+[2026-03-30 18:02:20Z INFO ExecutionContext] Initializing Job context
+[2026-03-30 18:02:20Z INFO ExecutionContext] Initialize GitHub context
+[2026-03-30 18:02:20Z INFO ExecutionContext] Initialize Env context
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Diag': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Diag': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag'
+[2026-03-30 18:02:20Z INFO JobRunner] Starting the job execution context.
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Work': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work'
+[2026-03-30 18:02:20Z INFO JobRunner] Validating directory permissions for: 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Work': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Tools': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work\_tool'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Work': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Temp': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work\_temp'
+[2026-03-30 18:02:20Z INFO JobRunner] Getting job extension.
+[2026-03-30 18:02:20Z INFO JobRunner] Initialize job. Getting all job steps.
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Diag': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Diag': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known config file 'Credentials': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\.credentials'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known config file 'SetupInfo': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\.setup_info'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Work': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work'
+[2026-03-30 18:02:20Z INFO PipelineDirectoryManager] Loading tracking config if exists: D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work\_PipelineMapping\lvwonx/py-greetings-ppln\PipelineFolder.json
+[2026-03-30 18:02:20Z INFO PipelineDirectoryManager] Creating a new tracking config file.
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Work': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work'
+[2026-03-30 18:02:20Z INFO PipelineDirectoryManager] Creating pipeline directory.
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Work': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work'
+[2026-03-30 18:02:20Z INFO PipelineDirectoryManager] Creating workspace directory.
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Work': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work'
+[2026-03-30 18:02:20Z INFO JobExtension] Downloading actions
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Work': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Actions': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work\_actions'
+[2026-03-30 18:02:20Z INFO ActionManager] Repository action is in 'self' repository.
+[2026-03-30 18:02:20Z INFO ActionManager] Repository action is in 'self' repository.
+[2026-03-30 18:02:20Z INFO JobExtension] Adding .
+[2026-03-30 18:02:20Z INFO JobExtension] Adding .
+[2026-03-30 18:02:20Z INFO JobExtension] Adding .
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Diag': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Diag': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Diag': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Diag': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Diag': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Diag': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag'
+[2026-03-30 18:02:20Z INFO JobExtension] Total accessible running process: 296.
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Work': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work'
+[2026-03-30 18:02:20Z INFO JobExtension] Start checking server connectivity.
+[2026-03-30 18:02:20Z INFO JobExtension] Check server connectivity for https://broker.actions.githubusercontent.com/health.
+[2026-03-30 18:02:20Z INFO JobExtension] Check server connectivity for https://token.actions.githubusercontent.com/ready.
+[2026-03-30 18:02:20Z INFO JobExtension] Check server connectivity for https://run.actions.githubusercontent.com/health.
+[2026-03-30 18:02:20Z INFO JobExtension] Start checking service connectivity in background.
+[2026-03-30 18:02:20Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "9e841e88-5dcf-4a25-8f37-7872bac4a61f",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2026-03-30T18:02:20.8158705Z",
+  "finishTime": "2026-03-30T18:02:20.8616506Z"
+}.
+[2026-03-30 18:02:20Z INFO JobRunner] Total job steps: 3.
+[2026-03-30 18:02:20Z INFO JobRunner] Run all job steps.
+[2026-03-30 18:02:20Z INFO StepsRunner] Processing step: DisplayName='Checkout pipeline repo'
+[2026-03-30 18:02:20Z INFO StepsRunner] Evaluating: success()
+[2026-03-30 18:02:20Z INFO StepsRunner] Result: true
+[2026-03-30 18:02:20Z INFO StepsRunner] Starting the step.
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Work': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work'
+[2026-03-30 18:02:20Z INFO StepsRunner] Which2: 'chcp'
+[2026-03-30 18:02:20Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-03-30 18:02:20Z INFO ProcessInvokerWrapper] Starting process:
+[2026-03-30 18:02:20Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-03-30 18:02:20Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-03-30 18:02:20Z INFO ProcessInvokerWrapper]   Working directory: 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work'
+[2026-03-30 18:02:20Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-03-30 18:02:20Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-03-30 18:02:20Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-03-30 18:02:20Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-03-30 18:02:20Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-03-30 18:02:20Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-03-30 18:02:20Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-03-30 18:02:20Z INFO ProcessInvokerWrapper] Process started with process id 34140, waiting for process exit.
+[2026-03-30 18:02:20Z INFO Worker] Listening for cancel message from the channel.
+[2026-03-30 18:02:20Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2026-03-30 18:02:20Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-03-30 18:02:20Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-03-30 18:02:20Z INFO ProcessInvokerWrapper] Finished process 34140 with exit code 0, and elapsed time 00:00:00.0093858.
+[2026-03-30 18:02:20Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-03-30 18:02:20Z INFO ActionManager] Load action that reference repository from 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work\py-greetings-ppln\py-greetings-ppln\./.github/actions/install-deps'
+[2026-03-30 18:02:20Z ERR  StepsRunner] Caught exception from step: System.NotSupportedException: Can't find 'action.yml', 'action.yaml' or 'Dockerfile' under 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work\py-greetings-ppln\py-greetings-ppln\.github\actions\install-deps'. Did you forget to run actions/checkout before running your local action?
+   at GitHub.Runner.Worker.ActionManager.LoadAction(IExecutionContext executionContext, ActionStep action)
+   at GitHub.Runner.Worker.ActionRunner.RunAsync()
+   at GitHub.Runner.Worker.StepsRunner.RunStepAsync(IStep step, CancellationToken jobCancellationToken)
+[2026-03-30 18:02:20Z INFO StepsRunner] Step result: Failed
+[2026-03-30 18:02:20Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2026-03-30 18:02:20Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-03-30 18:02:20Z INFO StepsRunner] Processing step: DisplayName='Clone python-greetings'
+[2026-03-30 18:02:20Z INFO StepsRunner] Evaluating: success()
+[2026-03-30 18:02:20Z INFO StepsRunner] Result: false
+[2026-03-30 18:02:20Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2026-03-30 18:02:20Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2026-03-30 18:02:20Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-03-30 18:02:20Z INFO StepsRunner] Processing step: DisplayName='Install dependencies'
+[2026-03-30 18:02:20Z INFO StepsRunner] Evaluating: success()
+[2026-03-30 18:02:20Z INFO StepsRunner] Result: false
+[2026-03-30 18:02:20Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2026-03-30 18:02:20Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2026-03-30 18:02:20Z INFO StepsRunner] Current state: job state = 'Failed'
+[2026-03-30 18:02:20Z INFO JobRunner] Finalize job.
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Diag': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:20Z INFO HostContext] Well known directory 'Diag': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag'
+[2026-03-30 18:02:20Z INFO JobExtension] Initialize Env context
+[2026-03-30 18:02:20Z INFO JobExtension] Initialize steps context
+[2026-03-30 18:02:20Z INFO JobExtension] Total accessible running process: 296.
+[2026-03-30 18:02:20Z INFO JobExtension] Wait for all connectivity checks to finish.
+[2026-03-30 18:02:21Z INFO ResultServer] Successfully started websocket client.
+[2026-03-30 18:02:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9e841e88-5dcf-4a25-8f37-7872bac4a61f', success rate: 1/1.
+[2026-03-30 18:02:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c0101cb5-c02a-44ed-b603-905a14c408db', success rate: 1/1.
+[2026-03-30 18:02:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record '88593ec2-6c1a-4bab-a9de-3026499f9792', success rate: 1/1.
+[2026-03-30 18:02:21Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2026-03-30 18:02:21Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2026-03-30 18:02:21Z INFO JobExtension] Connectivity check result: GitHub.Runner.Worker.JobExtension+CheckResult
+[2026-03-30 18:02:21Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "88593ec2-6c1a-4bab-a9de-3026499f9792",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2026-03-30T18:02:20.9040855Z",
+  "finishTime": "2026-03-30T18:02:21.2430487Z"
+}.
+[2026-03-30 18:02:21Z INFO JobRunner] Job result after all job steps finish: Failed
+[2026-03-30 18:02:21Z INFO JobRunner] Completing the job execution context.
+[2026-03-30 18:02:21Z INFO JobRunner] Shutting down the job server queue.
+[2026-03-30 18:02:21Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2026-03-30 18:02:21Z INFO JobServerQueue] All queue process task stopped.
+[2026-03-30 18:02:21Z INFO JobServerQueue] Web console line queue drained.
+[2026-03-30 18:02:21Z INFO JobServerQueue] Uploading 4 files in one shot.
+[2026-03-30 18:02:21Z INFO JobServerQueue] Try to upload 4 log files or attachments, success rate: 4/4.
+[2026-03-30 18:02:21Z INFO JobServerQueue] File upload queue drained.
+[2026-03-30 18:02:21Z INFO JobServerQueue] Starting results-based upload queue...
+[2026-03-30 18:02:21Z INFO JobServerQueue] Uploading 4 file(s) in one shot through results service.
+[2026-03-30 18:02:21Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-03-30 18:02:21Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag\blocks\a8be9e8b-e9df-4039-8424-b7d52a2b623c_9e841e88-5dcf-4a25-8f37-7872bac4a61f.1
+[2026-03-30 18:02:22Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-03-30 18:02:22Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag\blocks\a8be9e8b-e9df-4039-8424-b7d52a2b623c_c0101cb5-c02a-44ed-b603-905a14c408db.1
+[2026-03-30 18:02:23Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-03-30 18:02:23Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag\blocks\a8be9e8b-e9df-4039-8424-b7d52a2b623c_88593ec2-6c1a-4bab-a9de-3026499f9792.1
+[2026-03-30 18:02:23Z INFO JobServerQueue] Got a job log file to send to results service.
+[2026-03-30 18:02:23Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag\blocks\a8be9e8b-e9df-4039-8424-b7d52a2b623c_f2997197-64aa-55ad-a53d-36b19365d14c.1
+[2026-03-30 18:02:23Z INFO JobServerQueue] Tried to upload 4 file(s) to results, success rate: 4/4.
+[2026-03-30 18:02:23Z INFO JobServerQueue] Results upload queue drained.
+[2026-03-30 18:02:24Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2026-03-30 18:02:24Z INFO JobServerQueue] Timeline update queue drained.
+[2026-03-30 18:02:24Z INFO JobServerQueue] Disposing job server ...
+[2026-03-30 18:02:24Z INFO JobServerQueue] Disposing results server ...
+[2026-03-30 18:02:24Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2026-03-30 18:02:24Z INFO TempDirectoryManager] Cleaning runner temp folder: D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_work\_temp
+[2026-03-30 18:02:24Z INFO HostContext] Well known directory 'Bin': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\bin'
+[2026-03-30 18:02:24Z INFO HostContext] Well known directory 'Root': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner'
+[2026-03-30 18:02:24Z INFO HostContext] Well known directory 'Diag': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag'
+[2026-03-30 18:02:24Z INFO HostContext] Well known config file 'Telemetry': 'D:\vscprojects\NSTA\py-greetings-ppln\actions-runner\_diag\.telemetry'
+[2026-03-30 18:02:24Z INFO JobRunner] Raising job completed against run service
+[2026-03-30 18:02:24Z INFO Worker] Job completed.
