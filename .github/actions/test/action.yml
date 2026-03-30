@@ -14,7 +14,7 @@ runs:
     - name: Clone test repo
       shell: cmd
       run: |
-        git clone https://github.com/mtararujs/python-greetings.git python-greetings
+        git clone https://github.com/mtararujs/course-js-api-framework.git tests
 
     - name: Install npm deps
       shell: cmd
