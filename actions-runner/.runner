@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 2,
+  "agentName": "BEAST",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus10.actions.githubusercontent.com/ziEmYLr55G9t8cbQgn5f7rrvCJHN36l1jeWnDoASdm99ZSG9Dt/",
+  "gitHubUrl": "https://github.com/lvwonx/py-greetings-ppln",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}

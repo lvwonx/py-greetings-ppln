@@ -1,0 +1,12 @@
+name: Test Pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  install-pip-deps:
+    runs-on: self-hosted
+    steps:
+      - name: Hello
+        run: echo "Pipeline started"
