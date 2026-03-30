@@ -1,0 +1,22 @@
+name: Install Python Dependencies
+description: Setup venv and install packages
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout pipeline repo
+      uses: actions/checkout@v4
+
+    - name: Clone python-greetings
+      uses: actions/checkout@v4
+      with:
+        repository: mtararujs/python-greetings
+        path: python-greetings
+
+    - name: Install dependencies
+      shell: bash
+      working-directory: python-greetings
+      run: |
+        echo "Installing dependencies..."
+        python3 -m venv venv
+        ./venv/bin/python -m pip install -r requirements.txt

@@ -1,0 +1,33 @@
+name: Deploy Service
+description: Deploys the python-greetings application to a specified environment
+
+inputs:
+  env:
+    required: true
+  port:
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout pipeline repo
+      uses: actions/checkout@v4
+
+    - name: Clone python-greetings
+      uses: actions/checkout@v4
+      with:
+        repository: mtararujs/python-greetings
+        path: python-greetings
+
+    - name: Deploy
+      shell: bash
+      working-directory: python-greetings
+      run: |
+        echo "Deploying to ${{ inputs.env }}..."
+
+        pm2 delete greetings-app-${{ inputs.env }} || true
+
+        pm2 start app.py \
+          --name greetings-app-${{ inputs.env }} \
+          --interpreter ./venv/bin/python \
+          -- --port=${{ inputs.port }}
