@@ -8,10 +8,9 @@ runs:
       uses: actions/checkout@v4
 
     - name: Clone python-greetings
-      uses: actions/checkout@v4
-      with:
-        repository: mtararujs/python-greetings
-        path: python-greetings
+      shell: cmd
+      run: |
+        git clone https://github.com/mtararujs/python-greetings.git python-greetings
 
     - name: Install dependencies
       shell: cmd

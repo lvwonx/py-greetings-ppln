@@ -12,10 +12,9 @@ runs:
       uses: actions/checkout@v4
 
     - name: Clone test repo
-      uses: actions/checkout@v4
-      with:
-        repository: mtararujs/course-js-api-framework
-        path: tests
+      shell: cmd
+      run: |
+        git clone https://github.com/mtararujs/python-greetings.git python-greetings
 
     - name: Install npm deps
       shell: cmd
