@@ -9,7 +9,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Checkout pipeline repo
-        uses: ./.github/actions/install-deps
+        uses: actions/checkout@v4
 
       - name: Clone python-greetings
         uses: ./.github/actions/install-deps
@@ -28,7 +28,7 @@ jobs:
     runs-on: self-hosted
     needs: install-pip-deps
     steps:
-      - uses: ./.github/actions/deploy
+      - uses: actions/checkout@v4
 
       - uses: ./.github/actions/deploy
         with:
@@ -51,7 +51,7 @@ jobs:
     runs-on: self-hosted
     needs: deploy-to-dev
     steps:
-      - uses: ./.github/actions/test
+      - uses: actions/checkout@v4
 
       - uses: ./.github/actions/test
         with:
@@ -75,7 +75,7 @@ jobs:
     runs-on: self-hosted
     needs: tests-on-dev
     steps:
-      - uses: ./.github/actions/deploy
+      - uses: actions/checkout@v4
 
       - uses: ./.github/actions/deploy
         with:
@@ -98,7 +98,7 @@ jobs:
     runs-on: self-hosted
     needs: deploy-to-stg
     steps:
-      - uses: ./.github/actions/test
+      - uses: actions/checkout@v4
 
       - uses: ./.github/actions/test
         with:
@@ -124,7 +124,7 @@ jobs:
     runs-on: self-hosted
     needs: tests-on-stg
     steps:
-      - uses: ./.github/actions/deploy
+      - uses: actions/checkout@v4
 
       - uses: ./.github/actions/deploy
         with:
@@ -147,7 +147,7 @@ jobs:
     runs-on: self-hosted
     needs: deploy-to-preprod
     steps:
-      - uses: ./.github/actions/test
+      - uses: actions/checkout@v4
 
       - uses: ./.github/actions/test
         with:
@@ -171,7 +171,7 @@ jobs:
     runs-on: self-hosted
     needs: tests-on-preprod
     steps:
-      - uses: ./.github/actions/deploy
+      - uses: actions/checkout@v4
 
       - uses: ./.github/actions/deploy
         with:
@@ -194,7 +194,7 @@ jobs:
     runs-on: self-hosted
     needs: deploy-to-prod
     steps:
-      - uses: ./.github/actions/test
+      - uses: actions/checkout@v4
 
       - uses: ./.github/actions/test
         with:
