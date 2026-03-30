@@ -24,7 +24,7 @@ runs:
       run: |
         echo "Deploying to ${{ inputs.env }}..."
 
-        pm2 delete greetings-app-${{ inputs.env }} || true
+        pm2 delete greetings-app-${{ inputs.env }} & exit /B 0
 
         pm2 start app.py \
           --name greetings-app-${{ inputs.env }} \
